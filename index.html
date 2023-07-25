@@ -3,12 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Checkout Page</title>
 </head>
 <body>
+  <h1>Checkout</h1>
   <main>
-    <section></section>
-    <section></section>
+    <section class="items">
+      <div class="item-card">
+        <div class="item_img">
+          <img src="./assets/photo1.png" alt="Vintage Backbag product's image">
+        </div>
+        <div class="item_info">
+          <h5>Vintage Backbag</h5>
+          <section class="prices">
+            <span class="price">$54.99</span>
+            <span class="real_price">$94.99</span>
+          </section>
+          <div class="item_cant">
+            <button class="btn_cant">-</button>
+            <input id="cant_item1" name="cant_item1" type="number">
+            <button class="btn_cant" >+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item_img">
+          <img src="./assets/photo2.png" alt="Levi Shoes product's image">
+        </div>
+        <div class="item_info">
+          <h5>Levi Shoes</h5>
+          <section class="prices">
+            <span class="price">$74.99</span>
+            <span class="real_price">$124.99</span>
+          </section>
+          <div class="item_cant">
+            <input id="cant_item1" name="cant_item1" type="number">
+          </div>
+        </div>
+      </div>
+      <footer class="shipping_total">
+        <hr>
+        <div class="row">
+          <span class="fo_label">Shipping</span>
+          <span class="fo_price">$19</span>
+        </div>
+          <hr>
+          <div class="row">
+            <span class="fo_label">Total</span>
+            <span class="fo_price">$148.98</span>
+          </div>
+      </footer>
+    </section>
+    <section class="contact_shiping_informations">
+      <div>
+        <form action="">
+          <h3>Contact infomation</h3>
+          <div class="input_group">
+            <label class="input_label" for="email_input">Email</label>
+            <input type="email" name="user_email" id="email_input" placeholder="Enter your email...">
+          </div>
+          <div class="input_group">
+            <label class="input_label" for="phone_input">Phone</label>
+            <input type="tel" name="user_phone" id="phone_input" placeholder="Enter your phone...">
+          </div>
+        </div>
+        <div>
+          <h3>Shipping address</h3>
+          <div class="input_group">
+            <label class="input_label" for="full_name_input">Full Name</label>
+            <input type="text" name="user_full_name" id="full_name_input" placeholder="Your full name..">
+          </div>
+          <div class="input_group">
+            <label class="input_label" for="address_input">Address</label>
+            <input type="email" name="user_address" id="address_input" placeholder="Your address..">
+          </div>
+          <div class="input_group">
+            <label class="input_label" for="city_input">City</label>
+            <input type="email" name="user_city" id="city_input" placeholder="Your city..">
+          </div>
+          <div class="line_input">
+            <div class="input_group">
+              <label class="input_label" for="country_input">Country</label>
+              <input type="text" name="user_country" id="country_input" placeholder="Your country..">
+            </div>
+            <div class="input_group">
+              <label class="input_label" for="postal_input">Postal Code</label>
+              <input type="text" name="user_postal" id="postal_input" placeholder="Your postal code..">
+            </div>
+          </div>
+
+          <input type="checkbox" name="save_information" >
+          <span>Save this information for next time</span>
+        </div>
+        <input type="submit" value="Continue">
+        </form>
+    </section>
   </main>
   <footer>
     
