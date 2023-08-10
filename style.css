@@ -25,19 +25,27 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .items{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
   background: #F2F2F2;
-  width: 100%;
+  gap: 70px;
   padding: 30px;
   border-radius: 12px;
 }
 
+.cards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px
+}
 .item-card{
+  width: 100%;
   display: flex;
   gap: 20px;
 }
@@ -55,12 +63,14 @@ h5{
   line-height: 14.63px;
 }
 .item_info{
-  height: 100%;
+  height: initial;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 15px;
 }
 .prices{
+  margin-top: 10px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -77,12 +87,14 @@ h5{
   text-decoration: line-through;
 }
 
+
 .item_cant{
 display: flex;
 justify-content: space-between;
 border: 1px #828282 solid;
 border-radius: 12px;
 text-align: center!important;
+width: 120px;
 padding: 10px;
 }
 .btn_cant{
@@ -123,4 +135,84 @@ padding: 10px;
   font-size: 14px;
   font-weight: 600;
   line-height: 17.07px;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shipping{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input_group{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input_group label {
+  padding-top: 5px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.input_group input, select {
+  padding: 10px;
+  width: 100%;
+  min-width: 150px;
+  border: none;
+  border: #333 1px solid;
+  border-radius: 8px;
+}
+
+.line_input{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.save_information{
+  display: flex;
+  gap: 5px;
+}
+
+.save_information input{
+}
+
+.save_information span{
+  font-size: 10px;
+  font-weight: 700;
+}
+.form_footer{
+  display: flex;
+  justify-content: flex-end;
+}
+.submit{
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background:#F2994A ;
+  color: white;
+  border-radius: 5%;
+}
+#email_input{
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+}
+
+@media screen and (min-width:600px) {
+  main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
 }
