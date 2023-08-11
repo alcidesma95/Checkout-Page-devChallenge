@@ -12,12 +12,17 @@
 }
 body{
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
 h1{
   font-weight: 600;
   font-size: 24px;
   line-height: 29.26px;
-  padding: 20px 5px;
+  padding: 20px 0px;
 }
 
 main{
@@ -162,11 +167,17 @@ padding: 10px;
   font-weight: 700;
 }
 .input_group input, select {
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  opacity: .6;
+  background-size: 6%;
   padding: 10px;
+  padding-left: 40px;
   width: 100%;
+  color: #333;
   min-width: 150px;
   border: none;
-  border: #333 1px solid;
+  border: #333 2px solid;
   border-radius: 8px;
 }
 
@@ -181,8 +192,6 @@ padding: 10px;
   gap: 5px;
 }
 
-.save_information input{
-}
 
 .save_information span{
   font-size: 10px;
@@ -200,19 +209,61 @@ padding: 10px;
   color: white;
   border-radius: 5%;
 }
-#email_input{
-  background-image: url('');
-  background-repeat: no-repeat;
-  background-position: right center;
+input[type="email"]{
+  background-image: url("assets/email_black.svg");
+  padding-right: 20px;
+}
+input[name="user_phone"]{
+  background-image: url("assets/phone_black.svg");
+  padding-right: 20px;
+}
+input[name="full_name_input"]{
+  background-image: url("assets/account_circle_black.svg");
+  padding-right: 20px;
+}
+input[name="address_input"]{
+  background-image: url("assets/home_black.svg");
+  padding-right: 20px;
+}
+input[name="city_input"]{
+  background-image: url("assets/location_city_black.svg");
+  padding-right: 20px;
+}
+select[name="country_input"]{
+  background-image: url("assets/public_black.svg");
+  background-size: 15%;
+  padding-right: 20px;
+}
+input[name="user_postal"]{
+  background-image: url("assets/markunread_mailbox_black.svg");
+  background-size: 10%;
   padding-right: 20px;
 }
 
-@media screen and (min-width:600px) {
+
+@media screen and (min-width:750px) {
+
   main{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+  }
+  .items{
+    max-height: 520px;
+    max-width: 380px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   
+  .shipping{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
