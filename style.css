@@ -240,7 +240,12 @@ input[name="user_postal"]{
   padding-right: 20px;
 }
 
-
+footer p {
+  font-size: 14px;
+}
+footer p span{
+  font-weight: 700;
+}
 @media screen and (min-width:750px) {
 
   main{
